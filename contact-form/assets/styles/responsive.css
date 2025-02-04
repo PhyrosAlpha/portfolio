@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+
+    .dish-photo {
+        padding: 0;
+    }
+
+    .dish-photo img {
+        border-radius: 0;
+    }
+
+}

@@ -17,3 +17,10 @@ Construído como exercício do site: [Frontend Mentor](https://www.frontendmento
 [Veja aqui](https://phyrosalpha.github.io/portfolio/contact-form/)
 
 Construído como exercício do site: [Frontend Mentor](https://www.frontendmentor.io/)
+
+## Página de e-commerce
+<p>Página de e-commerce parcialmente funcional, com carrinho, responsividade para mobile e display de imagens.</p>
+
+[Veja aqui](https://phyrosalpha.github.io/portfolio/ecommerce-product-page-main/)
+
+Construído como exercício do site: [Frontend Mentor](https://www.frontendmentor.io/)

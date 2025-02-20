@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/button.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/product-images.css">
+    <link rel="stylesheet" href="./assets/styles/product-info.css">
+    <link rel="stylesheet" href="./assets/styles/cart.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <style>
+
+    </style>
+</head>
+<body style="margin-bottom: 10rem;">
+    <header class="header">
+        <img id="menu-open-menu" class="header__menu-icon" src="./assets/images/icon-menu.svg" alt="Imagem do contraído">
+        <img class="header__logo" src="./assets/images/logo.svg" alt="Logo do site escrito Tênis em inglês">
+        <nav class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><span>Coleções</span></li>
+                <li class="menu__item"><span>Homem</span></li>
+                <li class="menu__item"><span>Mulher</span></li>
+                <li class="menu__item"><span>Sobre</span></li>
+                <li class="menu__item"><span>Contato</span></li>
+            </ul>
+        </nav>
+        <div style="position: relative;">
+            <img id="icon-cart" class="header__icon-cart" src="./assets/images/icon-cart.svg" alt="ícone de um carrinho">
+            <span id="count-cart"  class="header__count-cart">0</span>
+        </div>
+        <img id="avatar" class="header__avatar" src="./assets/images/image-avatar.png" alt="Foto do avatar do usuário">
+
+        <div id="cart" class="cart">
+            <header class="cart__header">
+                Carrinho
+            </header>
+            <div id="cart-content" class="cart__content">
+                <span id="empty-cart-message">Seu carrinho está vazio.</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Responsive Menu -->
+    <div id="menu-bg" class="menu-bg">
+        <nav class="menu-responsive">
+            <img id="menu-close-button" class="menu-responsive__close-button" src="./assets/images/icon-close.svg" alt="botão de fechamento do menu para mobile">
+            <ul class="menu-responsive__items">
+                <li class="menu-responsive__item"><span>Coleções</span></li>
+                <li class="menu-responsive__item"><span>Homem</span></li>
+                <li class="menu-responsive__item"><span>Mulher</span></li>
+                <li class="menu-responsive__item"><span>Sobre</span></li>
+                <li class="menu-responsive__item"><span>Contato</span></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Zoom Product Images -->
+     <div id="zoom-product-image" class="zoom-product-image">
+        <div style="position: relative;">
+            <div class="product-images product-images--modal">
+                <div>
+                    <div class="product-images__selected-image">
+                        <img id="zoom-selected-image" src="./assets/images/image-product-1.jpg" alt="imagem selecionada do produto">
+                        <div class="product-images__arrow product-images__arrow--left">
+                            <img src="./assets/images/icon-previous.svg" alt="uma seta para a imagem anterior">
+                        </div>
+                        <div class="product-images__arrow product-images__arrow--right">
+                            <img  src="./assets/images/icon-next.svg" alt="uma seta para a imagem anterior">
+                        </div>
+                    </div>
+                    <div class="product-images__thumbnails">
+                            <img class="product-images__thumbnail selected" data-target-src="./assets/images/image-product-1.jpg" src="./assets/images/image-product-1-thumbnail.jpg" alt="">
+                            <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-2.jpg" src="./assets/images/image-product-2-thumbnail.jpg" alt="">
+                            <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-3.jpg" src="./assets/images/image-product-3-thumbnail.jpg" alt="">
+                            <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-4.jpg" src="./assets/images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <img id="zoom-product-image__close" class="zoom-product-image__close" src="./assets/images/icon-close.svg" alt="">
+        </div>
+     </div>
+    
+    <main class="main">
+        <section class="section">
+            <div class="product-images">
+                <div>
+                    <div class="product-images__selected-image">
+                        <img id="selected-image" src="./assets/images/image-product-1.jpg" alt="">
+                        <div class="product-images__arrow product-images__arrow--left">
+                            <img src="./assets/images/icon-previous.svg" alt="uma seta para a imagem anterior">
+                        </div>
+                        <div class="product-images__arrow product-images__arrow--right">
+                            <img  src="./assets/images/icon-next.svg" alt="uma seta para a imagem anterior">
+                        </div>
+                    </div>
+                    <div class="product-images__thumbnails">
+                        <img class="product-images__thumbnail selected" data-target-src="./assets/images/image-product-1.jpg" src="./assets/images/image-product-1-thumbnail.jpg" alt="">
+                        <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-2.jpg" src="./assets/images/image-product-2-thumbnail.jpg" alt="">
+                        <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-4.jpg" src="./assets/images/image-product-4-thumbnail.jpg" alt="">
+                        <img class="product-images__thumbnail" data-target-src="./assets/images/image-product-3.jpg" src="./assets/images/image-product-3-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3 class="product-info__label">SNEAKER COMPANY</h3>
+                    <h2 class="product-info__title">Fall Limited Edition Sneakers</h2>
+                    <p class="product-info__description">Estes tênis discretos são o companheiro perfeito para uso casual. Apresentando um 
+                        sola externa de borracha durável, eles suportam tudo o que o clima pode oferecer.
+                    </p>
+                    <div class="product-info__price">
+                        <span class="product-info__descont-price">R$125.00</span><span class="product-info__descont">50%</span>
+                        <span class="product-info__original-price">R$250.00</span>
+                    </div>
+                </div>
+                <div class="product-info__buttons">
+                    <div class="product-info__length-button">
+                        <button id="minus-button" class="active-opacity"><img src="./assets/images/icon-minus.svg" alt=""></button>
+                        <span id="length-display">0</span>
+                        <button id="plus-button"  class="active-opacity"><img src="./assets/images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <button id="add-cart-button" class="button active-opacity">
+                        <img src="./assets/images/icon-cart.svg" alt="">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/product-display.js"></script>
+    <script type="module" src="./assets/js/index.js" ></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.product-images {
+    display: flex;
+    justify-content: center;
+}
+
+.product-images__selected-image {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.product-images__selected-image > img:first-child{
+    border-radius: 15px;
+    cursor: pointer;
+    max-width: 500px;
+    width: 100%;
+}
+
+.product-images__thumbnails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-images__thumbnail {
+    border-radius: 15px;
+}
+
+.product-images__thumbnail {
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 200ms;
+    width: 100px;
+}
+
+.product-images__arrow {
+    position: absolute;
+    background: var(--white);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    bottom: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product-images__arrow--left {
+    left: 0; 
+    transform: translate(-50%, 50%);
+}
+
+.product-images__arrow--right {
+    right: 0; 
+    transform: translate(50%, 50%);
+}
+
+.product-images__arrow img {
+    width: 0.9rem;
+}
+
+.product-images__thumbnails:last-child {
+    margin-right: 0;
+}
+
+.product-images__thumbnail:hover {
+    opacity: 0.5;
+}
+
+.product-images__thumbnails .selected {
+    outline: var(--primary-color) solid 2px;
+    opacity: 0.5;
+}
+
+/* ----product images modal modificator----*/
+.product-images--modal {
+    position: relative;
+}
+
+.product-images--modal .product-images__selected-image {
+    position: relative;
+}
+
+.product-images--modal .product-images__selected-image img {
+    max-width: 37.5rem;
+}
+
+.product-images--modal .product-images__thumbnails {
+    justify-content:space-around;
+    padding: 0 2.5rem;
+}
+
+.product-images--modal .product-images__arrow {
+    display: flex;
+}
+
+/* -------modal-------- */
+.zoom-product-image {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.is-open {
+    display: flex;
+}
+
+.zoom-product-image__close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    width: 1.5rem;
+}
+/* -------------------- */
